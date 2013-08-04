@@ -1,7 +1,7 @@
 # The Young Person's Guide to Programming in Minecraft
-## 2013/01/08 17:26
+## 4. August 2013 08:35 Uhr
 
-### Introduction
+### Einführung
 
 Minecraft is an open-ended 3D game where you can build and craft
 anything you like. Minecraft can be extended and enhanced using 'Mods'
@@ -53,7 +53,7 @@ Minecraft your way using Javascript. Javascript is easier to learn than
 Java but it's also more flexible and powerful and is used for creating 
 interactive web sites and many other applications.
 
-### Learning Javascript
+### Lerne Javascript
 
 To begin creating cool stuff in Minecraft using ScriptCraft, you don't 
 *have* to know much JavaScript. ScriptCraft comes with lots of functions 
@@ -65,7 +65,7 @@ your friends. If you want to get started learning JavaScript, check out
 this [fun Javascript Tutorial][ce]. If you want to dive right in to 
 ScriptCraft, read on...
 
-### First Steps
+### Erste Schritte
 
 If you don't already know Javascript, don't worry, you'll learn a little 
 about Programming and Javascript along the way. You've set up a 
@@ -293,18 +293,13 @@ away you want something to extend.
 
 ![Width, Height and Depth][img_whd]
 
-### More shapes
+### Weitere Formen
 
- * `box0( block, width, height, depth )` - creates an empty box (with the
- insides hollowed out - perfect for dwellings. `box0` will remove both
- the floor and ceiling too.
- * `cylinder( block, radius, height )` - creates cylinders, perfect for
- Chimneys.
- * `cylinder0( block, radius, height )` - creates empty cylinders -
- perfect for Towers. `cylinder0` will remove both the floor and
- ceiling too.
- * `prism( block, width, depth )` - creates a Prism - good for roofs.
- * `prism0( block, width, depth )` - creates an empty prism.
+ * `box0( Block, Breite, Höhe, Tiefe )` - erstellt eine leere Box, also innen hohl – perfekt für Häuser. Decke und Boden werden dabei genauso entfernt.
+ * `cylinder( Block, Radius, Höhe )` - erstellt Zylinder, z.B. sehr gut geeignet für Kamine
+ * `cylinder0( Block, Radius, Höhe )` - ergibt einen ausgehöhlten Zylinder ohne Decke und Boden – kann sehr gut für Türme verwendet werden.
+ * `prism( Block, Breite, Tiefe )` - erstellt dir eine dreieckige Form, die du z.B. für ein typisches Dach verwenden kannst.
+ * `prism0( Block, Breite, Tiefe )` - damit kannst du ein ausgehöhltes Dreieck erstellen.
 
 ### The Drone Object
 
