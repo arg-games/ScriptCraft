@@ -3,20 +3,21 @@
 
 ### Einführung
 
-Minecraft is an open-ended 3D game where you can build and craft
-anything you like. Minecraft can be extended and enhanced using 'Mods'
-(short for 'modifications') - additional bits of code that are added
-to the Game. ScriptCraft is one such Mod - it lets you program in
-Javacript right within the game, making it possible to ...
+Minecraft ist ein 3D Spiel ohne festes Spielziel, bei dem alles
+aus Klötzen gebaut und erschaffen werden kann was man sich vorstellen
+kann. Minecraft kann mit Hilfe von 'Mods' (Kurzform für modifications)
+-- also mit weiterem Programmcode -- erweitert werden. ScriptCraft ist
+eine solche Modifikation, die es erlaubt direkt im Spiel JavaScript zu
+benutzen. Damit sind folgende Dinge möglich:
 
- * Build using simple javascript statements. 
- * Extend the game in other interesting ways - add new Items, change
-   the game behaviour and create mini-games.
+ * Mit simplen JavaSCript Befehlen Blöcke bauen
+ * Das Spiel mit interessanten neuen Eigenschaften ausstatten (neue
+   Items hinzufügen, das Spielverhalten beeinflussen und Mini-Games
+   erstellen)
 
-Minecraft can be played in single-player or multi-player mode (with
-friends). Most people play Minecraft in Multi-player mode where
-players connect to a Minecraft Server on the internet or locally
-(running on the player's computer). 
+Minecraft kann im Einspieler- und im Mehrspielermodus gespielt mit
+Freunden gespielt werden. Die meisten spielen Minecraft im
+Multiplayermodus online über das Internet oder lokal.
 
 ![Cottages created using ScriptCraft in MineCraft][img_cr]
 
