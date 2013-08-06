@@ -3,143 +3,142 @@
 
 ### Einführung
 
-Minecraft ist ein 3D Spiel ohne festes Spielziel, bei dem alles
-aus Klötzen gebaut und erschaffen werden kann was man sich vorstellen
-kann. Minecraft kann mit Hilfe von 'Mods' (Kurzform für modifications)
--- also mit weiterem Programmcode -- erweitert werden. ScriptCraft ist
-eine solche Modifikation, die es erlaubt direkt im Spiel JavaScript zu
-benutzen. Damit sind folgende Dinge möglich:
+Minecraft ist ein 3D Spiel ohne festes Spielziel. Mit einfachen Blöcken kannst
+du ganze Welten bauen oder auf Entdeckungsreise durch eine immer weiter
+generierte Welt gehen. Minecraft kann mit Hilfe von 'Mods' (Kurzform für
+modifications) -- also mit weiterem Programmcode -- erweitert werden.
+ScriptCraft ist eine solche Modifikation, die es dir erlaubt, direkt im Spiel
+JavaScript zu benutzen. Damit sind folgende Dinge möglich:
 
- * Mit simplen JavaSCript Befehlen Blöcke bauen
+ * Mit simplen JavaScript Befehlen Blöcke bauen
  * Das Spiel mit interessanten neuen Eigenschaften ausstatten (neue
    Items hinzufügen, das Spielverhalten beeinflussen und Mini-Games
    erstellen)
 
-Minecraft kann im Einspieler- und im Mehrspielermodus gespielt mit
-Freunden gespielt werden. Die meisten spielen Minecraft im
-Multiplayermodus online über das Internet oder lokal.
+Du kannst Minecraft im Einspieler- und im Mehrspielermodus mit Freunden
+spielen. Die meisten spielen Minecraft im Multiplayermodus online über das
+Internet oder lokal.
 
 ![Cottages created using ScriptCraft in MineCraft][img_cr]
 
 ### Installation
 
-CraftBukkit ist eine spezielle Server-Version von Minecraft, die es auf
+CraftBukkit ist eine spezielle Server-Version von Minecraft, die es dir auf
 einfache Weise erlaubt, Modifikationen und Erweiterungen für Minecraft zu
-schreiben. ScriptCraft ist eine solche Modifikation, die CraftBukkit
-benutzt. Modifikationen für Minecraft zu erstellen ist schwer, ScriptCraft
-macht dies einfach. Folgende Schritte sind zur Installation notwendig:
+erstellen. ScriptCraft ist eine solche Modifikation, die CraftBukkit benutzt.
+Modifikationen für Minecraft zu erstellen ist schwer, ScriptCraft macht dies
+dir einfacher. Folgende Schritte sind zur Installation notwendig:
 
-1. [Herunterladen und Installieren von CraftBukkit][dlbuk].
+1. [CraftBukkit herunterladen und installieren][dlbuk].
 
-2. [ScriptCraft Modifikation herunterladen][sc-plugin]. Danach in das
-Verzeichnis `craftbukkit/plugins` kopieren, das im ersten Schritt erstellt
-wurde.
+2. Die [ScriptCraft Modifikation herunterladen][sc-plugin]. Danach in das
+   Verzeichnis `craftbukkit/plugins` kopieren, das im ersten Schritt erstellt
+   wurde.
 
 3. Den CraftBukkit Server starten.
 
-4. Operator-Berechtigung setzen. Dazu im CraftBukkit Consolenfenster
-`op {username}` eingaben und mit ENTER bestätigen ({username} natürlich
-mit dem eigenen Minecraft Spielernamen ersetzen). Dieser Befehl sorgt
-dafür, dass diesem Spieler Administratorrechte gegeben wird. Damit können
-mehrere Befehle aus ein normaler Spieler ausgeführt werden.
+4. Operator-Berechtigung setzen. Dazu musst du im CraftBukkit Consolenfenster
+   `op {username}` eingaben und mit ENTER bestätigen (`{username}` natürlich
+   mit dem eigenen Minecraft Spielernamen ersetzen). Dieser Befehl sorgt dafür,
+   dass diesem Spieler Administratorrechte gegeben wird. Damit kannst du
+   weitaus mehr Befehle auf dem Server ausführen als ein normaler Spieler.
 
-5. Um die Installation zu verifizieren, kann im CraftBukkit Consolenfenster
-`js 1+1` eingegeben werden. Es sollte `> 2` erscheinen wenn alles geklappt hat.
+5. Um sicherzustellen, dass die Installation funktioniert hat und alles richtig
+   eingerichtet ist, kannst du im CraftBukkit Consolenfenster `js 1+1`
+   eingegeben. Es sollte nun `> 2` erscheinen.
 
-Gratulation! Jetzt ist alles bereit um mit dem Programmieren in ScriptCraft
-zu beginnen. Normalerweise werden Modifikationen in Java programmiert. Dies macht
-das Erstellen von eigenene Modifikationen oder neuer Spiellogik schwer, da zuerst
-Java gelernt werden muss. Mit dem ScriptCraft Plugin muss man nicht mehr in
-Java programmieren, sondern mit JavaScript. JavaScript ist einfacher zu lernen
-als Java und ist zugleich auch flexibler und dynamischer. JavaScript kann auch
-für die Erstellung von dynamischen Webseiten oder gar Server-Anwendungen
-verwendet werden und ist in den letzten Jahren extrem schnell geworden.
+Gratulation! Jetzt ist alles bereit um mit dem Programmieren in ScriptCraft zu
+beginnen. Normalerweise werden Modifikationen in Java programmiert. Dies macht
+das Erstellen von eigenenen Modifikationen oder neuer Spiellogik schwer, da du
+zuerst Java lernen musst. Mit dem ScriptCraft Plugin ist es nicht mehr nötig
+Java programmieren, du kannst stattdessen JavaScript verwenden. JavaScript ist
+einfacher zu lernen als Java und ist zugleich flexibler. JavaScript kannst du
+auch für die Erstellung von dynamischen Webseiten oder gar Server-Anwendungen
+verwenden.
 
 ### JavaScript lernen
 
-Um coole Sachen in Minecraft mit ScriptCraft zu machen *musst* man nicht
-viel von JavaScript wissen. Es genügen schon ein paar Grundlagen um damit
-zu beginnen. ScriptCraft bringt eine Menge Funktionen mit, um Formen und Objekte
-zu bauen. Das lernen der Programmiersprache kommt während des experimentierens
-mit dem Plugin. Je mehr man sich mit JavaScript auskennt, desto mehr kann man auch
-machen -- nicht nur einfache Formen und Gebäude sondern auch neue Spielregeln,
-Items, Aktionen, sogar kleine Multiplayerspiele. Für JavaScript-Grundlagen
-sei das [lustige JavaScript Tutorial][ce] empfohlen, für den direkten Einstieg
-in ScriptCraft, einfach hier weiterlesen ...
+Da du coole Sachen in Minecraft mit ScriptCraft machen willst, *musst* du nicht
+viel von JavaScript wissen. Es genügen schon ein paar Grundlagen, damit du mit
+der Programmierung beginnen kannst. Du musst dir deshalb keine Sorgen machen,
+dass du am Anfang noch nicht alles kennst, das kommt mit der Zeit automatisch.
+ScriptCraft bringt eine Menge Funktionen mit, um Formen und Objekte zu bauen.
+Je mehr man sich mit JavaScript auskennt, desto mehr kann man auch machen --
+nicht nur einfache Formen und Gebäude, sondern auch neue Spielregeln, Items,
+Aktionen, sogar kleine Multiplayerspiele. Für JavaScript-Grundlagen empfehle
+ich dir das [lustige JavaScript Tutorial][ce], für den direkten Einstieg in
+ScriptCraft, einfach hier weiterlesen ...
 
 ### Erste Schritte
 
-If you don't already know Javascript, don't worry, you'll learn a little 
-about Programming and Javascript along the way. You've set up a 
-Minecraft server and are ready to connect ...
+Keine Sorge, wenn du noch nie etwas mit JavaScript gemacht hast. Du wirst im Verlauf
+dieses Textes einiges über JavaScript und dem Programmieren im Allgemeinen lernen.
+Der Minecraft Server ist aufgesetzt, bereit zu verbinden ...
 
-1. Launch Minecraft (keep the Bukkit Command window open). 
-2. Click 'Multi-Player'
-3. Click 'Add Server'
-4. Type any name you like in the name field then type `localhost` in the 
-address field. `localhost` is a special internet address that points to 
-your own computer.
-5. Click 'Join Server' to join the craftbukkit server.
-6. Once you've joined the game, press the `/` key located at the bottom 
-right of your keyboard. A prompt will appear. Type the following then 
-press enter: `js 1 + 1` The number 2 should be displayed. 
+1. Starte Minecraft (lasse das Bukkit Befehlsfenster offen)
+2. Klicke auf "Multiplayer" und dann auf "Add Server"
+3. Die Serveradresse ist "localhost". Dies ist ein spezieller Hostname, welcher
+   auf den eigenen Computer verweist.
+4. Klicke auf "Join Server" um auf den Bukkit Server zu verbinden.
+5. Nach dem du dem Spiel beigetreten bist, kannst du mit der `/`-Taste das
+   Chatfenster öffnen. Eine Eingabezeile erscheint, in das du NAchrichten, aber
+   auch Befehle eingeben kannst. Probiere `js 1+1` aus, die Nummer 2 sollte
+   erscheinen.
 
-... Well Done! You've just confirmed you can run Javascript code from
-within the Minecraft Console. 
+Sehr gut! Du hast eben JavaScript Code eingegeben, welcher vom ScriptCraft
+Plugin interpretiert wurde und das Ergebnis direkt im Spiel angezeigt wurde.
 
-### Variables
+### Variablen
 
-A variable is how you name something for the computer (and you the 
-programmer) to remember. You create a new variable in Javascript using 
-the `var` keyword...
+Mit einer Variable kannst du (der Programmierer) Dingen einen Namen geben. In
+JavaScript werden Variablen mit dem `var` Schlüsselwort erstellt.
 
-    /js var location = "Blackrock Castle"
+    /js var position = "Saurons Festung"
 
-... creates a new variable called `location` and stores the text 
-`Blackrock Castle` in it. Now the computer has a new item in its memory 
-called `location`. We can use that name like this...
+Dies erstellt eine neue Variable mit dem Namen `position`, welche den Text
+"Saurons Festung" enthält. Ab jetzt hat der Computer einen neuen Eintrag
+im Speicher mit dem Namen `position`. Diesen Namen können wir so nutzen ...
 
-    /js echo( location )
+    /js echo(position)
 
-... and the following is displayed...
+... um folgendes anzuzeigen:
 
-    Blackrock Castle
+    Saurons Festung
 
-...You might be wondering where the `""` (called double-quotes) went. 
-When telling the computer to store some text, you have to put `"` 
-(that's the double-quote character - press Shift+2) at the start and end 
-of the text. The computer doesn't store these quote characters, only the 
-text between them. The computer will store the variables while the 
-Minecraft Server is running. Repeat the last command you entered by 
-pressing the `/` key then the UP arrow key on your keyboard, then 
-pressing enter. You can repeat that statement as many times as you like 
-and the computer will always display the same value. You can change the 
-value like this...
+Du wunderst sich vermutlich, wo die `""` abgeblieben sind. Um Text in einer
+Variable zu speichern, muss dieser in `"` eingeschlossen werden. Der Computer
+speichert die doppelten Anführungszeichen dabei aber nicht mit, nur den
+eigentlichen Text. Variablen werden im Minecraft Server gespeichert, während
+dieser läuft. Wiederhole den letzten Befehl den du eingegeben hast (drücke dazu
+`/` und danach `Pfeil nach oben`). Du kannst den Befehl so oft wiederholen
+wie du willst, der Computer wird jedes Mal den selben Wert ausgeben. Du kannst
+diesen Wert auch ändern:
 
-    /js location = "Mahon Point"
+    /js position = "Das Auenland"
 
-...notice this time I didn't use the `var` keyword. I didn't need to. 
-The `var` keyword is only needed when you first create the variable. Now 
-execute this command...
+Beachte hierbei, dass das `var` Schlüsselwort fehlt, es wird nicht mehr
+benötigt. Das `var` Schlüsselwort muss nur bei der Erstellung mit angegeben
+werden. Jetzt führe folgenden Befehl aus:
 
-    /js echo( location ) 
+    /js echo(position)
 
-...and it displays...
+... und es erscheint:
 
-    Mahon Point
+    Das Auenland
 
-Variables can be created and changed easily in Javascript. Along with 
-the variables you'll create in your in-game commands and scripts, there 
-are handy variables created for you by ScriptCraft. One such variable is 
-`self`, it contains information about the current player...
+Variablen können in JavaScript einfach angelegt und verändert werden. Neben
+Variablen die du dir selbst anlegst gibt es auch Variablen, die ScriptCraft
+für dich bereits angelegt hat. Eine solche Variable ist `self`. Diese
+enthält Informationen über den aktuellen Spieler:
 
-    /js echo ( self )
-    
-... displays the following...
+    /js echo (self)
 
-    CraftPlayer{name=walterh}
+Folgendes erscheint:
 
-... for me but the message displayed will be different for every player.
+    CraftPlayer{name=fu86}
+
+Natürlich ist der ausgegebene Name bei jedem Spieler ein anderer. Bei dir sollte
+dein Name erscheinen.
 
 ### Functions
 
