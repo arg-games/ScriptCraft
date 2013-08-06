@@ -23,48 +23,49 @@ Multiplayermodus online über das Internet oder lokal.
 
 ### Installation
 
-CraftBukkit is a version of the Minecraft server software which allows
-easy addition of 'Mods' and extensions to Minecraft. ScriptCraft is a
-'Mod' for use with CraftBukkit.  Adding Mods to Minecraft can be
-difficult but CraftBukkit makes it easy.  Follow these steps to
-Install ScriptCraft on your computer...
+CraftBukkit ist eine spezielle Server-Version von Minecraft, die es auf
+einfache Weise erlaubt, Modifikationen und Erweiterungen für Minecraft zu
+schreiben. ScriptCraft ist eine solche Modifikation, die CraftBukkit
+benutzt. Modifikationen für Minecraft zu erstellen ist schwer, ScriptCraft
+macht dies einfach. Folgende Schritte sind zur Installation notwendig:
 
-1. [Download and install CraftBukkit][dlbuk].
+1. [Herunterladen und Installieren von CraftBukkit][dlbuk].
 
-2. [Download the ScriptCraft Mod][sc-plugin]. Then copy it to the
-`craftbukkit/plugins` folder you created in step 1.
+2. [ScriptCraft Modifikation herunterladen][sc-plugin]. Danach in das
+Verzeichnis `craftbukkit/plugins` kopieren, das im ersten Schritt erstellt
+wurde.
 
-3. Start the CraftBukkit server.
+3. Den CraftBukkit Server starten.
 
-4. In the CraftBukkit command window type `op {your_username}` and hit
-enter, replacing {your_username} with your own minecraft
-username. This will give you `operator` access meaning you can perform
-more commands than are normally available in Minecraft.
+4. Operator-Berechtigung setzen. Dazu im CraftBukkit Consolenfenster
+`op {username}` eingaben und mit ENTER bestätigen ({username} natürlich
+mit dem eigenen Minecraft Spielernamen ersetzen). Dieser Befehl sorgt
+dafür, dass diesem Spieler Administratorrechte gegeben wird. Damit können
+mehrere Befehle aus ein normaler Spieler ausgeführt werden.
 
-5. In the CraftBukkit command window type `js 1 + 1` and hit enter. You should see `> 2` .
+5. Um die Installation zu verifizieren, kann im CraftBukkit Consolenfenster
+`js 1+1` eingegeben werden. Es sollte `> 2` erscheinen wenn alles geklappt hat.
 
-... Congratulations! You just installed your own Minecraft Server with 
-the ScriptCraft Mod and are now ready to begin programming in Minecraft.
+Gratulation! Jetzt ist alles bereit um mit dem Programmieren in ScriptCraft
+zu beginnen. Normalerweise werden Modifikationen in Java programmiert. Dies macht
+das Erstellen von eigenene Modifikationen oder neuer Spiellogik schwer, da zuerst
+Java gelernt werden muss. Mit dem ScriptCraft Plugin muss man nicht mehr in
+Java programmieren, sondern mit JavaScript. JavaScript ist einfacher zu lernen
+als Java und ist zugleich auch flexibler und dynamischer. JavaScript kann auch
+für die Erstellung von dynamischen Webseiten oder gar Server-Anwendungen
+verwendet werden und ist in den letzten Jahren extrem schnell geworden.
 
-Normally, Minecraft Mods are written in Java. This makes writing your 
-own extension or game rules difficult because you must first learn Java. 
-Java is different enough from Javascript. With the ScriptCraft plug-in 
-installed, you don't have to learn Java, you can extend and customize 
-Minecraft your way using Javascript. Javascript is easier to learn than 
-Java but it's also more flexible and powerful and is used for creating 
-interactive web sites and many other applications.
+### JavaScript lernen
 
-### Lerne Javascript
-
-To begin creating cool stuff in Minecraft using ScriptCraft, you don't 
-*have* to know much JavaScript. ScriptCraft comes with lots of functions 
-to help you create buildings of any size, and lets you experiment while 
-you play. However, as you learn Javascript you will be able to create 
-cooler stuff in Minecraft - not just buildings, you'll be able to add 
-new rules and items to the game - even create mini-games for you and 
-your friends. If you want to get started learning JavaScript, check out 
-this [fun Javascript Tutorial][ce]. If you want to dive right in to 
-ScriptCraft, read on...
+Um coole Sachen in Minecraft mit ScriptCraft zu machen *musst* man nicht
+viel von JavaScript wissen. Es genügen schon ein paar Grundlagen um damit
+zu beginnen. ScriptCraft bringt eine Menge Funktionen mit, um Formen und Objekte
+zu bauen. Das lernen der Programmiersprache kommt während des experimentierens
+mit dem Plugin. Je mehr man sich mit JavaScript auskennt, desto mehr kann man auch
+machen -- nicht nur einfache Formen und Gebäude sondern auch neue Spielregeln,
+Items, Aktionen, sogar kleine Multiplayerspiele. Für JavaScript-Grundlagen
+sei das [lustige JavaScript Tutorial][ce] empfohlen, für den direkten Einstieg
+in ScriptCraft, einfach hier weiterlesen ...
 
 ### Erste Schritte
 
