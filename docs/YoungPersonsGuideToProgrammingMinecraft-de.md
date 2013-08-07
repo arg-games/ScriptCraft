@@ -1,7 +1,6 @@
 # The Young Person's Guide to Programming in Minecraft
-## 4. August 2013 08:35 Uhr
 
-### Einführung
+## Einführung
 
 Minecraft ist ein 3D Spiel ohne festes Spielziel. Mit einfachen Blöcken kannst
 du ganze Welten bauen oder auf Entdeckungsreise durch eine immer weiter
@@ -21,7 +20,7 @@ Internet oder lokal.
 
 ![Cottages created using ScriptCraft in MineCraft][img_cr]
 
-### Installation
+## Installation
 
 CraftBukkit ist eine spezielle Server-Version von Minecraft, die es dir auf
 einfache Weise erlaubt, Modifikationen und Erweiterungen für Minecraft zu
@@ -56,7 +55,7 @@ einfacher zu lernen als Java und ist zugleich flexibler. JavaScript kannst du
 auch für die Erstellung von dynamischen Webseiten oder gar Server-Anwendungen
 verwenden.
 
-### JavaScript lernen
+## JavaScript lernen
 
 Da du coole Sachen in Minecraft mit ScriptCraft machen willst, *musst* du nicht
 viel von JavaScript wissen. Es genügen schon ein paar Grundlagen, damit du mit
@@ -140,71 +139,79 @@ Folgendes erscheint:
 Natürlich ist der ausgegebene Name bei jedem Spieler ein anderer. Bei dir sollte
 dein Name erscheinen.
 
-### Functions
+### Funktionen
 
-ScriptCraft comes with a couple of extra functions not normally found in 
-Javascript. These functions will help you build new structures and 
-buildings which would otherwise take hours to build by hand. Before 
-looking at the building functions let's look at the `echo()` function.
+ScriptCraft bringt ein paar Funktionen mit, die im normalen JavaScript
+nicht zu finden sind. Diese Funktionen helfen dir, neue Strukturen
+und Gebäude zu erstellen, für die du normalerweise händisch Stunden
+brauchen würdest. Bevor wir allerdings die Bau-Funktionen näher
+betrachten, schauen wir uns die `echo()` Funktion an.
 
-`echo()` - as its name implies - will echo back at you whatever you
-tell it. For example, type ...
-   
-    /js echo('Hello')
+Die `echo()`-Funktion -- wie der Name schon vermuten lässt -- gibt alles zurück, was
+du ihr als Parameter übergibst. Hier ein Beispiel:
 
-... and the game will display...
+    /js echo("Hallo")
 
-    Hello
+... und im Spiel wird folgendes erscheinen:
 
-... type ...
+    Hallo
 
-    /js echo( 5 + 7 )
+... tippe ...
 
-... and the game will display...
+    /js echo(5+7)
 
-    12    
+... und im Spiel wird folgendes angezeigt:
 
-... While you can now use Minecraft to help with Maths homework - I 
-don't recommend it. Homework and Minecraft don't mix! The `echo()` 
-function will display anything you tell it to - Text, Numbers and other types...
+    12
 
-    /js echo( new Date() )
+Damit kannst du sogar in Minecraft rechnen und deine Mathe-Hausaufgaben machen,
+was aber nicht zu empfehlen ist. Hausaufgaben und Minecraft passen nicht sehr
+gut zusammen! Die `echo()`-Funktion gibt alles aus, was sie als Parameter
+bekommt; Text, Nummern und ganze Ausdrücke. Ein weiteres Beispiel:
 
-... prints today's date. If the statement above looks confusing - don't 
-worry - `new Date()` creates a new date object - I'll talk about objects 
-later ...
+    /js echo(new Date())
+
+... gibt das aktuelle Datum aus. Wenn der Ausdruck oben für dich verwirrend
+erscheint, mach dir keine Sorgen; `new Date()` erstellt ein neues
+`Date`-Objekt, was das ist, wird später noch erklärt.
+
 
     Tue Jan 08 2013 20:53:37 GMT-0000 (GMT)
 
-![Today's Date][img_echo_date]
+![Das heutige Datum][img_echo_date]
 
-`echo()` is a very useful function but it is not part of the
-Javascript Language. You can't use it outside of Minecraft. There are
-many other functions in Javascript all of which you can also
-use in Minecraft. For example...
+`echo()` ist eine sehr nützliches Funktion, sie ist aber nicht Teil der
+JavaScript Programmiersprache. Du kannst sie nicht ausserhalb von Minecraft
+verwenden. Es gibt aber Funktionen, die in JavaScript enthalten sind, die auch
+in ScriptCraft verwendet werden kann. Ein Beispiel:
 
-    /js Math.max( 6, 11 )
+    /js Math.max(6, 11)
 
-... returns the larger of the 2 numbers you give it (max is short for
-maximum). While...
+... gibt die größere der beiden Zahlen zurück (max ist das Kürzel für Maximum).
+Mit dieser Funktion ...
 
-    /js Math.min( 6, 11 )
+    /js Math.min(6, 11)
 
-... returns the smaller of the 2 numbers. That's another thing -
-functions can `return` stuff. You can store the result of a function
-(what it returns) in a variable like this...
+... kann man dagegen die kleinere der beiden Zahlen zurückgeben. In JavaScript
+hat jeder Ausdruck einen Rückgabewert. Das unterscheidet JavaScript von
+Sprachen wie PHP oder C. Wenn das für dich im Moment keinen Sinn ergibt, ist
+das nicht schlimm, es wird rgend wann plötzlich Sinn ergeben. Das Ergebnis
+eines beliebigen Ausdrucks lässt sich in einer Variablen speichern. Etwa
+so:
 
-    /js var biggest = Math.max( 6, 11 )
-   
-... Now type...
-   
-    /js biggest
+    /js var groesser = Math.max(6, 11)
 
-... Not all Javascript functions return data but most do. As well as
-the functions provided to you by the Javascript Language and
-ScriptCraft, you can write your own functions like this...
+Das Ergebnis steckt nun in der Variable `groesser`.
 
-    /js function whatTimeIsIt () { return new Date() }
+    /js groesser
+
+Dieses Mal haben wir nicht die `echo()`-Funktion verwendet, aber es wurde
+trotzdem 11 zurückgegeben. ScriptCraft gibt immer den Rückgabewert auf
+der Minecraft Console aus.
+
+Du kannst allerdings auch eigene funktionen schreiben:
+
+    /js function aktuelle_uhrzeit() { return new Date() }
 
 ... Here you've created a new `function` called `whatTimeIsIt` and
 told the function it should return a new `Date` object every time it's
@@ -228,7 +235,7 @@ in-game console. You'll see the number displayed is different each
 time. Think of Math.random() as a Dice with many many sides. You can
 rely on it to never return the same value twice.
 
-### Building stuff in Minecraft
+## Building stuff in Minecraft
 
 Now we get to the fun stuff - creating structures and buildings in 
 Minecraft. Building by hand is fun but tedious when you want to build 

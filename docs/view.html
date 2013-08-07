@@ -4,68 +4,16 @@
     <meta charset='utf-8'>
     <title>ScriptCraft</title>
     <link href="vendor/markdown.css" media="all" rel="stylesheet" type="text/css" />
+    <link href="vendor/toc.css" media="all" rel="stylesheet" type="text/css" />
     <script src="vendor/jquery-1.10.2.min.js" type="text/javascript"></script>
     <script src="vendor/jquery.toc.min.js" type="text/javascript"></script>
     <script src="vendor/showdown.js" type="text/javascript"></script>
-    <style>
-#toc {
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    position: fixed;
-    background: #000;
-    width: 250px;
-    padding-top: 20px;
-    color: #fff;
-    font-family: Arial;
-}
-
-#toc ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#toc li {
-    padding: 5px 10px;
-}
-
-#toc a {
-    color: #fff;
-    text-decoration: none;
-    display: block;
-}
-
-#toc .toc-h2 {
-    padding-left: 10px;
-}
-#toc .toc-h3 {
-  font-size: 15px;
-}
-
-#toc .toc-h4 {
-    padding-left: 30px;
-    font-size: 14px;
-}
-#toc .toc-h4 a {
-  color: gray;
-}
-
-#toc .toc-active {
-    background: #336699;
-}
-
-#content {
-  position: relative;
-  left: 265px;
-}
-    </style>
     <script type="text/javascript">
       $(document).ready(function() {
-        $.get("YoungPersonsGuideToProgrammingMinecraft-de.md?callback=?", function(content) {
+        $.get("YoungPersonsGuideToProgrammingMinecraft-de.md", function(content) {
           $('#content').html(new Showdown.converter().makeHtml(content));
           $('#toc').toc({
-            'selectors': 'h3,h4',
+            'selectors': 'h2,h3,h4',
             'container': '#content'
             });
         });
