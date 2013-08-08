@@ -12,8 +12,9 @@
       $(document).ready(function() {
         $.get("YoungPersonsGuideToProgrammingMinecraft-de.md", function(content) {
           $('#content').html(new Showdown.converter().makeHtml(content));
-          $('#toc').toc({
-            'selectors': 'h2,h3,h4',
+          
+          $('#toc .inner').toc({
+            'selectors': 'h1,h2,h3,h4',
             'container': '#content'
             });
         });
@@ -21,7 +22,7 @@
     </script>
   </head>
 <body>
-  <div id="toc"></div>
+  <div id="toc"><div class="inner"></div></div>
   <div id="content">
   </div>
 </body>

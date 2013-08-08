@@ -4,11 +4,14 @@
     height: 100%;
     position: fixed;
     background: #000;
-    width: 250px;
-    padding-top: 20px;
+    width: 275px;
     color: #fff;
     font-family: Arial;
     overflow: scroll;
+}
+
+#toc .inner {
+    padding: 15px 15px 50px 15px;
 }
 
 #toc ul {
@@ -18,35 +21,80 @@
 }
 
 #toc li {
-    padding: 5px 10px;
+    padding: 0 0 1px 0;
 }
 
 #toc a {
     color: #fff;
     text-decoration: none;
     display: block;
+    border-radius: 5px;
+}
+
+#toc .toc-h1 {
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: bold;
+    margin: 0 0 15px 0;
+}
+#toc .toc-h1 a {
+    text-align: center;
+    padding: 5px 5px;
+}
+#toc .toc-h1 a:hover,
+#toc .toc-h1 a:active
+{
+    color: #eee;
 }
 
 #toc .toc-h2 {
-    padding-left: 10px;
+    font-size: 13px;
+    font-weight: bold;
 }
-#toc .toc-h2 {
-  font-size: 15px;
+#toc .toc-h2 a {
+    padding: 0 5px;
+}
+#toc .toc-h2 a:hover,
+#toc .toc-h2 a:active
+{
+    background-color: #666;
 }
 
 #toc .toc-h3 {
-    padding-left: 30px;
-    font-size: 14px;
+    margin-left: 10px;
+    font-size: 11px;
 }
 #toc .toc-h3 a {
-  color: gray;
+    padding: 0 5px;
+    color: #aaa;
+}
+#toc .toc-h3 a:hover,
+#toc .toc-h3 a:active
+{
+    color: white;
 }
 
-#toc .toc-active {
+#toc .toc-h4 {
+    margin-left: 30px;
+    font-size: 11px;
+    line-height: 20px;
+}
+#toc .toc-h4 a {
+    padding: 0 5px;
+    color: #888;
+}
+#toc .toc-h4 a:hover,
+#toc .toc-h4 a:active
+{
+    color: white;
+}
+
+#toc .toc-active a {
     background: #336699;
+    color: white;
 }
 
 #content {
-  position: relative;
-  left: 265px;
+    position: relative;
+    left: 325px;
 }

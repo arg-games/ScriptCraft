@@ -1,4 +1,4 @@
-# The Young Person's Guide to Programming in Minecraft
+# Modding für Minecraft – der einfache Einstieg
 
 ## Einführung
 
@@ -253,20 +253,21 @@ lang sein.
 
 ![3D Shapes][img_3d_shapes]
 
-You can create a Cube or a Cuboid in ScriptCraft using the `box()` 
-function. You must tell the function what material you want the shape to 
-be made of. For example, in the game, point the cross hairs at the 
-ground, then type the following and hit enter...
+Einen Würfel oder Quader kannst du in ScriptCraft mithilfe der Funktion `box()`
+erstellen. Der Befehl benötigt nur die Angabe des Materials, das auf das Objekt
+angewendet werden soll. Probier es einfach mal aus, zeige im Spiel mit dem
+Fadenkreuz auf den Boden, gebe den folgenden Befehl ein und drücke die Enter-
+Taste...
 
     /js box("5")
 
-... This will change the targeted block to wood. What's happened here is 
-the `box()` function has created a single new wooden block. The text 
-`"5"` is taken by Minecraft to mean Wood. You can see many more 
-materials and the number Minecraft uses for them by visiting the 
-[Minecraft Data Values][mcdv] site.  
+... das wird den angepeilten Block zu einem Holz-Block umwandeln, denn die
+Funktion `box()` hat anstelle des vorherigen Blocks einen neuen Block aus Holz
+erstellt. Der Text `"5"` wird von Minecraft als "Holz" verstanden. Eine
+Übersicht zu den möglichen Materialien und ihren zugehörigen Nummern findest
+du auf [dieser][mcdv] (englisch) Seite.
 
-### Common Block Materials
+### Typische Block Materialien
 
 In Minecraft Programming, Materials aren't known by their name,
 instead numbers (sometimes 2 numbers) are used to indicate which
