@@ -213,40 +213,43 @@ Du kannst allerdings auch eigene funktionen schreiben:
 
     /js function aktuelle_uhrzeit() { return new Date() }
 
-... Here you've created a new `function` called `whatTimeIsIt` and
-told the function it should return a new `Date` object every time it's
-called. You'll notice the above statement didn't actually do anything
-- it certainly didn't display the current time. That's because all
- you've done is is say what the function should do when it's called,
- you haven't called it yet. To call the function...
+Hier hast du eben eine neue Funktion mit dem Name `aktuelle_uhrzeit` angelegt,
+die jedes Mal ein neues `Date`-Objekt zurückgiebt, wenn sie aufgerufen wird. Du
+hast vielleicht gemerkt, dass der Aufruf oben keinerlei Effekt hatte und nichts
+passiert ist -- nicht mal die aktuelle Uhrzeit wurde ausgegeben. Das liegt daran,
+dass der Inhalt der Funktion erst verarbeitet wird, wenn die Funktion aufgerufen
+wird. Also rufen wir die Funktion auf:
 
-    /js whatTimeIsIt()
+    /js aktuelle_uhrzeit()
 
-... The current time is displayed. Congrats! You've just written your
-first Javascript function - you're well on your way to becoming a
-Minecraft Modder :-) There are many functions for working with Text,
-numbers and dates in Javascript...
+... und die aktuelle Uhrzeit erscheint im Spiel. Gratulation, du hast soeben
+deine erste JavaScript-Funktion geschrieben. Du bist auf dem richtigen weg,
+ein Minecraft Modder zu werden :-)
+
+Es gibt eine Menge fertiger Funktionen, die du nutzen kannst. Zum Beispiel
+folgende:
 
     /js Math.random()
-   
-... prints out a random number every time you call it. Try it! Then press
-the `/` key then the UP Arrow key to repeat the last statement in your
-in-game console. You'll see the number displayed is different each
-time. Think of Math.random() as a Dice with many many sides. You can
-rely on it to never return the same value twice.
 
-## Building stuff in Minecraft
+... diese gibt jedes Mal eine zufällige Nummer aus, wenn du sie aufrufst. Probier
+es aus! Führe die Funktion ein paar mal aus (mit der Pfeil nach oben Taste geht
+das schneller) und es wird jedes Mal eine neue Zufallszahl ausgegeben. Du kannst
+dir `Math.random()` wie ein Würfel mit sehr vielen Seiten vorstellen. Jedes Mal
+wenn du die Funktion aufrufst, wird erneut gewürfelt.
 
-Now we get to the fun stuff - creating structures and buildings in 
-Minecraft. Building by hand is fun but tedious when you want to build 
-big - Towers, Castles and Fortresses. That's where ScriptCraft comes in. 
-ScriptCraft comes with a couple of javascript functions that can be 
-combined to build interesting things. Let's start small though to get a 
-feel for how ScriptCraft's building functions work. The function you'll 
-probably use most for building is called `box()` and - as its name 
-implies - it is used to create cubes and cuboids of any size. A cube is 
-a 3D shape whose sides are all the same length. A cuboid is a 3D shape 
-whose width, height and length can differ.
+## Dinge in Minecraft bauen
+
+Jetzt kommen wir zum interessanten Teil -- Objekte und Gebäude in Minecraft
+bauen. Von Hand bauen macht Spaß, doch wird anstrengend wenn man große und
+aufwändige Dinge wie Türme, Burgen oder ganze Festungen bauen will. Hier kommt
+ScriptCraft ins Spiel. ScriptCraft besitzt ein paar JavaScript-Funktionen, die
+kombiniert viele interessante Dinge hervorbringen können. Fangen wir einfach an
+um ein Gefühl dafür zu bekommen, wie ScriptCraft's Baufunktionen funktionieren.
+Die Funktion, die du vermutlich am meisten verwenden wirst ist die
+`box()`-Funktion. Wie der Name schon vermuten lässt, kann man damit Würfel und
+Quader in jeder größe erstellen. Ein Würfel ist ein 3D-Objekt, bei dem alle
+seiten gleich lang sind. Bei einem Quader können die Seiten unterschiedlich
+lang sein.
 
 ![3D Shapes][img_3d_shapes]
 
