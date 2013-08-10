@@ -251,7 +251,7 @@ Quader in jeder größe erstellen. Ein Würfel ist ein 3D-Objekt, bei dem alle
 seiten gleich lang sind. Bei einem Quader können die Seiten unterschiedlich
 lang sein.
 
-![3D Shapes][img_3d_shapes]
+![3D Formen][img_3d_shapes]
 
 Einen Würfel oder Quader kannst du in ScriptCraft mithilfe der Funktion `box()`
 erstellen. Der Befehl benötigt nur die Angabe des Materials, das auf das Objekt
@@ -269,51 +269,56 @@ du auf [dieser][mcdv] (englisch) Seite.
 
 ### Typische Block Materialien
 
-In Minecraft Programming, Materials aren't known by their name,
-instead numbers (sometimes 2 numbers) are used to indicate which
-material should be used. For example the number 2 is grass, 1 is
-cobblestone etc, while 5 is wood (oak). There are different types of
-wood so the text "5:1" means Spruce, "5:2" means Birch and "5:3" means
-Jungle wood. There are many different materials in the Minecraft world, the most
-commonly used materials for building are:
+Wie du im vorherigen Kapitel wohl schon bemerkt hast, werden beim Programmieren
+in Minecraft die Materialien nicht mit ihrem Namen, sondern mit Zahlen
+(teilweise auch zwei) angesprochen. Zum Beispiel steht die Zahl 2 für Gras, 1
+ist Stein oder 5 ist Holz (Eiche). Beim Holz gibt es wiederum verschieden Typen,
+so sprichst du mit "5:1" Fichtenholz an, "5:2" steht für Birke und mit "5:3"
+kannst du Tropenholz erstellen. Es gibt noch viele weitere Materialien in
+Minecraft, aber die am häufigsten verwendeten sind folgende:
 
- * "4" - Cobblestone 
- * "5" - Wooden Planks
- * "5:2" - Birch wood Planks (light wood)
- * "98" - Stone bricks
- * "45" - Red bricks
- * "68" - Doors
- * "102" - Glass panes (for windows)
-   
-For reference, here is a chart of all of the blocks (not items) in the Minecraft
-world...
+ * "4" - Grober Stein 
+ * "5" - Holzplatten
+ * "5:2" - Platten aus Birkenholz (hell)
+ * "98" - Steinblock
+ * "45" - Ziegelstein
+ * "68" - Türe
+ * "102" - Glasfläche (z.B. für Fenster)
 
-![Minecraft Data Values][img_dv]
+Eine sehr gute Übersicht zu den möglichen Materialien (über 150 Stück) bekommst
+du auf folgender Grafik...
 
-### Dimensions
+![Minecraft Materialien][img_dv]
 
-`box()` can do more than just
-create single blocks - it can create cubes and cuboids of any
-size. Take a look at the following picture which shows how shapes are
-measured in 3D space. There are 3 dimensions (or sizes) to consider.
+### Maße
 
-1. Width
-2. Height
-3. Depth (or length) - not to be confused with how deep underground a 
-mine-shaft can go. Think of Depth (or length if you prefer) as how far 
-away you want something to extend.
+Mit `box()` kannst du aber mehr machen, als nur einen einzelnen Block erstellen!
+Die Funktion kann Würfel und Quader in jeder beliebigen Größe erstellen. Auf der
+folgenden Grafik siehst du wie die jeweilien Seiten im 3D Raum bemessen werden.
+Die wichtigen drei Maße sind:
 
-![Width, Height and Depth][img_whd]
+1. Breite
+2. Höhe
+3. Tiefe (oder Länge) - nicht zu verwechseln mit der Tiefe die ein Loch im Boden
+oder eine Miene gehen kann. Die Tiefe steht in diesem Fall für wie weit weg von
+dir z.B. der Würfel verlängert (= Lämge) werden soll.
+
+![Breite, Höhe und Tiefe][img_whd]
 
 ### Weitere Formen
 
- * `box0( Block, Breite, Höhe, Tiefe )` - erstellt eine leere Box, also innen hohl – perfekt für Häuser. Decke und Boden werden dabei genauso entfernt.
- * `cylinder( Block, Radius, Höhe )` - erstellt Zylinder, z.B. sehr gut geeignet für Kamine
- * `cylinder0( Block, Radius, Höhe )` - ergibt einen ausgehöhlten Zylinder ohne Decke und Boden – kann sehr gut für Türme verwendet werden.
- * `prism( Block, Breite, Tiefe )` - erstellt dir eine dreieckige Form, die du z.B. für ein typisches Dach verwenden kannst.
- * `prism0( Block, Breite, Tiefe )` - damit kannst du ein ausgehöhltes Dreieck erstellen.
+ * `box0( Block, Breite, Höhe, Tiefe )` - erstellt eine leere Box, also innen 
+hohl – perfekt für Häuser. Decke und Boden werden dabei genauso entfernt.
+ * `cylinder( Block, Radius, Höhe )` - erstellt Zylinder, z.B. sehr gut geeignet
+für Kamine
+ * `cylinder0( Block, Radius, Höhe )` - ergibt einen ausgehöhlten Zylinder ohne
+Decke und Boden – kann sehr gut für Türme verwendet werden.
+ * `prism( Block, Breite, Tiefe )` - erstellt dir eine dreieckige Form, die du
+z.B. für ein typisches Dach verwenden kannst.
+ * `prism0( Block, Breite, Tiefe )` - damit kannst du ein ausgehöhltes Dreieck
+erstellen.
 
-### The Drone Object
+## Die Drone
 
 ScriptCraft is a Minecraft Mod that lets you execute Javascript code
 in the game. It also lets you write your own Mod in Javacript. One
@@ -328,7 +333,7 @@ your behalf. Think of a `Drone` as something like a remote control
 plane that can move about freely and build things for you. Moving the
 Drone is easy...
 
-### Movement
+### Bewegung
 
  * `up( numberOfBlocks )` - moves the Drone Up. For example: `up()`
    will move the Drone 1 block up. You can tell it how many blocks to
@@ -343,7 +348,7 @@ Drone is easy...
    make the Drone turn twice so that it is facing in the opposite
    direction.
 
-#### Chaining - combining bulding and movement.
+#### Befehle stapeln – Bewegung und Erstellung kombinieren
 
 You can make a Drone move around before and after building by
 *daisy-chaining* the building and movement functions together. In the
@@ -373,7 +378,7 @@ Your dwelling should end up looking something like this...
 
 ![Excercise Dwelling][img_ed]
 
-### Remembering where you started.
+### Den Anfang wiederfinden
 
 Sometimes when you're building something big that requires lots of
 manoeuvering by your Drone, you need to leave breadcrumbs as you go so
@@ -402,7 +407,7 @@ Both `chkpt()` and `mark()` are useful for when you want to build
 complex things that require your Drone to move about a lot ( for
 example, Castles, mansions, palaces, etc).
 
-### Saving your work
+### Deine Arbeit speichern
 
 You can build cool things using the in-game command-prompt and the
 `/js` command but sooner or later you'll probably want to build
@@ -415,7 +420,7 @@ code. If you don't already have it on your machine, you can [install
 Notepad++ here][np]. I recommend using NotePad++ rather than plain old
 Notepad because it understands Javascript.
 
-### Your First Minecraft Mod!
+## Your First Minecraft Mod!
 
 So, You've learnt a little bit about Javascript and what the Drone()
 object can do, let's use that knowledge to create a Minecraft Mod!
@@ -450,7 +455,7 @@ Mods is as simple as writing a new javascript function and saving it
 in a file in the js-plugins directory. This function will now be
 avaible every time you launch minecraft.
 
-#### Parameters
+### Parameter
 If you want to change the `greet()` function so that it displays a
 greeting other than "Hi " you can change the code in the `greet()`
 function, or better still, you can use *Parameters*. Parameters are
@@ -483,7 +488,7 @@ minecraft. Now enter the following command in Minecraft...
 they're called. As you'll see later, Parameters are very useful when
 changing the behaviour of MineCraft.
 
-### true or false
+### wahr oder unwahr
 
 Try entering each of the following statements and make a note of the
 answers given by minecraft...
@@ -576,14 +581,14 @@ called `API` calls - these are calls to functions and methods in
 Minecraft - you can read more about these on the [CraftBukkit API
 Reference][cbapi].)
 
-### ...and Again, and Again, and Again,...
+### ...wieder und wieder und wieder...
 
 One of the things Computers are really good at is
 repetition. Computers don't get tired or bored of doing the same thing
 over and over again.  Loops are handy, if you want to run the same
 code over and over again, each time with a different value.  
 
-#### Counting to 100
+#### Wir zählen bis 100, ganz automatisch
 
 At the in-game command prompt (hint: press 't') type the following then hit Enter...
 
@@ -611,7 +616,7 @@ The `for` statement is useful when you want to repeat something over and over. I
 remember, an Array is just a list of things, for example - the players
 connnected to a server, the worlds of a server and so on.
 
-#### Saying "Hi!" to every player
+#### Allen Spielern "Hallo!" sagen
 
 At the in-game command prompt type the following then hit Enter...
 
@@ -669,7 +674,7 @@ loop and arrays. Arrays and `for` loops are used heavily in all types
 of software, in fact there probably isn't any software that doesn't
 use `for` loops and Arrays to get things done.
 
-#### While Loops
+#### Schleifen mit `While`
 
 Another way to repeat things over and over is to use a `while`
 loop. The following `while` loop counts to 100...
@@ -712,7 +717,7 @@ a matter of personal taste, `for` loops are more commonly used with
 Arrays but as you see from the example above, `while` loops can also
 loop over Arrays.
 
-#### `utils.foreach()` - Yet another way to process Arrays
+#### `utils.foreach()` - Mit Arrays arbeiten
 
 Both the `for` statement and `while` statement are standard commonly
 used javascript statements used for looping. ScriptCraft also comes
@@ -763,7 +768,7 @@ utils.foreach() function...
                    }
     );
 
-#### Exercise
+#### Kleine Übung
 Try changing the above function so that different sounds are played
 instead of a Cat's Meow.  You'll need to lookup the [CraftBukkit API's
 Sound class][soundapi] to see all of the possible sounds that can be
@@ -774,7 +779,7 @@ provides `for` and `while` statements for looping and many javascript
 libraries also provide their own custom looping functions. You should
 use what you feel most comfortable with.
 
-#### Putting `for` loops to use - Building a Skyscraper
+#### Mit `for` Schleifen warbeiten – wir bauen ein Hochhaus
 
 For loops can be used to build enormous structures. In this next
 exercise I'm going to use a for loop to build a skyscraper.  This
@@ -844,7 +849,7 @@ logical step. Of course, Minecraft doesn't have the same constraints
 as real-world densely populated areas so let your imagination go wild.
 
 
-### Making Decisions 
+### Entscheidungen programmieren
 
 All the programs we have seen so far have been fairly predictable - they went 
 straight through the statements, and then went back to the beginning again. This is 
@@ -907,7 +912,7 @@ whether or not you're currently flying. Type the `/js flightStatus()`
 command while on the ground and while flying. The message displayed in
 each case should be different.
 
-### Next Steps
+## Die nächsten Schritte
 
 This guide is meant as a gentle introduction to programming and
 modding Minecraft using the Javascript Programming Language.
@@ -946,6 +951,3 @@ different objects and methods available for use by ScriptCraft.
 [img_greet]: img/ypgpm_greet.png
 [img_ssf]: img/skyscraper_floor.png
 [img_ss]: img/skyscraper.png
-
-## Categories
-Minecraft, Programming, ScriptCraft
