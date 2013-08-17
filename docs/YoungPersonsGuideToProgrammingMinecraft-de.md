@@ -320,47 +320,33 @@ erstellen.
 
 ## Die Drone
 
-ScriptCraft is a Minecraft Mod that lets you execute Javascript code
-in the game. It also lets you write your own Mod in Javacript. One
-such mod that comes bundled with ScriptCraft is called the `Drone`
-mod. The `Drone` is an (invsible) object you create every time you
-execute any of the building or movement functions. When you execute...
+ScriptCraft ist ein Mindecraft Mod, der es dir erlaubt Javascript Code direkt im Spiel (über die Befehlszeile) auszuführen – außerdem kannst du komplett eigene Mods programmieren. Ein solche Mod wird direkt mit ScriptCraft mitgeliefert: Der `Drone` Mod. Die Drone ist ein (unsichtbares) Objekt, das bei allen Befehlen zum Erstellen von Blöcken oder den Bewegen-Befehlen verwendet wird. Wenn du also folgenden Befehl schreibst:
 
     /js box(5,3,2,4)
    
-... a new `Drone` object is created and does the work of building on
-your behalf. Think of a `Drone` as something like a remote control
-plane that can move about freely and build things for you. Moving the
-Drone is easy...
+... wird ein neues Dronen-Objekt generiert, das die Erstellung der Blöcke übernimmt. Du kannst dir die Drone wie einen kleinen steuerbaren Hubschrauber vorstellen, den du je nach Wunsch bewegen und Dinge bauen lassen kannst.
 
 ### Bewegung
 
- * `up( numberOfBlocks )` - moves the Drone Up. For example: `up()`
-   will move the Drone 1 block up. You can tell it how many blocks to
-   move if you want it to move more than one block.
- * `down( numberOfBlocks )` - moves the Drone Down. 
- * `left( numberOfBlocks )` - moves the Drone Left.
- * `right( numberOfBlocs )` - moves the Drone Right.
- * `fwd( numberOfBlocs )` - moves the Drone Forward (away from the player).
- * `back( numberOfBlocs )` - moves the Drone Back (towards the player)
- * `turn( numberOfTurns )` - Turns the Drone Clock-wise (right). For example:
-   `turn()` will make the Drone turn right 90 degrees. `turn(2)` will
-   make the Drone turn twice so that it is facing in the opposite
-   direction.
+ * `up( AnzahlDerEinheiten )` - bewegt die Drone nach oben. Wenn du gar keine Anzahl in Klammern angibst – also `up()` – bewegt sich die Drone einen Block nach oben. Alternativ kannst du auch eine Anzahl angeben, also z.B. `up(5)` bewegt die Drone 5 Blöcke nach oben.
+ * `down( AnzahlDerEinheiten )` - bewegt die Drone nach unten.
+ * `left( AnzahlDerEinheiten )` - bewegt die Drone nach links.
+ * `right( AnzahlDerEinheiten )` - bewegt die Drone nach rechts.
+ * `fwd( AnzahlDerEinheiten )` - bewegt die Drone weg von deiner Position als Spieler.
+ * `back( AnzahlDerEinheiten )` - bewegt die Drone auf den Spieler (dich) zu.
+ * `turn( AnzahlDerEinheiten )` - dreht die Drone im Uhrzeigersinn (rechts herum). Also `turn()` dreht die Drone 90 Grad und `turn(2)` 180 Grad – direkt in die entgegengesetzte Richtung.
 
 #### Befehle stapeln – Bewegung und Erstellung kombinieren
 
-You can make a Drone move around before and after building by
-*daisy-chaining* the building and movement functions together. In the
-game, point at the ground then type the following...
+Die Befehle fürs Erstellen von Blöcken und Bewegen der Drone, die du eben gelernt hast, kannst du auch aneinanderreihen, sodass alle nacheinander ausgeführt werden. Versuche Folgendes: Ziele im Spiel auf einen Block auf dem Boden und gebe diesen Befehl ein:
 
     /js up(1).box(5).fwd(3).box(5)
    
-A series of 2 boxes is created 3 blocks apart.
+Es werden zwei Türme aus jeweils 5 Blöcken generiert, die 3 Einheiten auseinander stehen.
 
 ![Two Boxes 3 blocks apart][img_2boxes]
 
-### Excercise - Build a simple dwelling
+### Übung – ein kleines Häuschen bauen
 
 OK. You know enough now about the `Drone` functions to be able to
 build a simple dwelling. The dwelling should be a hollow building with
