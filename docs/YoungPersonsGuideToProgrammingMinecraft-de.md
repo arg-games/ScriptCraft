@@ -348,19 +348,13 @@ Es werden zwei Blöcke, die 3 Einheiten auseinander stehen, erstellt.
 
 ### Übung – ein kleines Häuschen bauen
 
-OK. You know enough now about the `Drone` functions to be able to
-build a simple dwelling. The dwelling should be a hollow building with
-a sloped roof. *Don't worry about doors or windows for now*. The walls
-should be made of Cobblestone ("4") and the roof made of wood ("5"). You can use
-the following `Drone` functions to create a dwelling 7 blocks wide by
-3 blocks high by 6 blocks long with a wooden sloped roof. It's up
-to you to figure out how. 
+So, jetzt kennst du alle Befehle die notwendig sind um die Drone ein kleines Häuschen bauen zu lassen. Das Haus sollte innen hohl sein und ein Schrägdach haben. *Fenster und Türen lassen wir in diesem Schritt erstmal weg*. Für die Wände eignet sich der Pflasterstein (Nummer "4") sehr gut und für das Dach ist das normale Holz (die "5") passend. Versuche es einfach mal selbst: Baue mit den folgenden drei Befehlen ein kleines Häuschen, das eine Grundfläche von 7x6 Blöcken hat, drei Blöcke hoch ist und mit einem schrägen Dach ausgerüstet ist. Wie genau du die Befehle verwendest, ist dir überlassen.
 
  * `up()` 
  * `box0()`
  * `prism0()`
 
-Your dwelling should end up looking something like this...
+Das Häuschen könnte am Ende ungefähr so aussehen...
 
 ![Excercise Dwelling][img_ed]
 
