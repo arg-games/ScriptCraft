@@ -342,9 +342,9 @@ Die Befehle fürs Erstellen von Blöcken und Bewegen der Drone, die du eben gele
 
     /js up(1).box(5).fwd(3).box(5)
    
-Es werden zwei Türme aus jeweils 5 Blöcken generiert, die 3 Einheiten auseinander stehen.
+Es werden zwei Blöcke, die 3 Einheiten auseinander stehen, erstellt.
 
-![Two Boxes 3 blocks apart][img_2boxes]
+![Zwei Blöcke mit einem Abstand von 3 Einheiten][img_2boxes]
 
 ### Übung – ein kleines Häuschen bauen
 
