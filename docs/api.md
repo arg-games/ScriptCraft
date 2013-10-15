@@ -209,6 +209,37 @@ The execution of the function object passed to the `ready()` function
 is *deferred* until all of the plugins/modules have loaded. That way
 you are guaranteed that when the function is invoked, all of the
 plugins/modules have been loaded and evaluated and are ready to use.
+setTimeout() function
+---------------------
+
+This function mimics the setTimeout() function used in browser-based javascript.
+However, the function will only accept a function reference, not a string of javascript code.
+Where setTimeout() in the browser returns a numeric value which can be subsequently passed to 
+clearTimeout(), This implementation returns a [BukkitTask][btdoc] object which can be subsequently passed to ScriptCraft's own clearTimeout() implementation.
+
+If Node.js supports setTimeout() then it's probably good for ScriptCraft to support it too.
+
+[btdoc]: http://jd.bukkit.org/beta/apidocs/org/bukkit/scheduler/BukkitTask.html
+
+clearTimeout() function
+---------------------
+A scriptcraft implementation of clearTimeout().
+
+setInterval() function
+---------------------
+
+This function mimics the setInterval() function used in browser-based javascript.
+However, the function will only accept a function reference, not a string of javascript code.
+Where setInterval() in the browser returns a numeric value which can be subsequently passed to 
+clearInterval(), This implementation returns a [BukkitTask][btdoc] object which can be subsequently passed to ScriptCraft's own clearInterval() implementation.
+
+If Node.js supports setInterval() then it's probably good for ScriptCraft to support it too.
+
+[btdoc]: http://jd.bukkit.org/beta/apidocs/org/bukkit/scheduler/BukkitTask.html
+
+clearInterval() function
+---------------------
+A scriptcraft implementation of clearInterval().
 
 Core Module - Special Variables
 ===============================
@@ -1389,10 +1420,11 @@ Example
 To warn players when night is approaching...
 
     utils.at( "19:00", function() {
-        /* it's 7 in the evening so warn all players that night is coming ! */
+
         utils.foreach( server.onlinePlayers, function(player){
             player.chat("The night is dark and full of terrors!");            
         });
+
     }, self.world);
   
 String class extensions
